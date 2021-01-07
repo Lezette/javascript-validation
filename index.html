@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript</title>
+</head>
+<body>
+    <section class="grid-lg grid-cols-2-lg w-auto gap">
+        <div class="cover-img sec">
+            <img src="https://source.unsplash.com/FV3GConVSss" alt="bg-img">
+        </div>
+        <div class="p-md first">
+            <h1 class="py-sm">Let's work together</h1>
+            <p class="py-sm">We'd love to hear from you! Send us a message using the form oposite, or email us. We'd love to hear from you! Send us a message using the form oposite, or email us.</p>
+        
+            <form class="grid grid-cols-1" action="thankyou.html" method="POST">
+                <div class="grid grid-cols-2-lg py-sm gap">
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" name="fname" id="fname" required>
+                    </div>
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" name="lname" id="lname" required>
+                    </div>
+                </div>
+                <div class="py-sm">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="py-sm">
+                    <div class="grid grid-cols-2">
+                        <label for="company">Company</label>
+                        <small class="text-right">Optional</small>
+                   </div>
+                    <input type="text" name="company" id="company">
+                </div>
+                <div class="py-sm">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+                <div class="py-sm">
+                   <div class="grid grid-cols-2">
+                        <label for="phone">How can we help you</label>
+                        <small class="text-right">Max. 500 characters</small>
+                   </div>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="py-sm">
+                    <label for="budget">Expected Budget</label>
+                    <div class="py-sm">
+                        <input type="radio" name="budget" id="budget" value="Less than $25k"> Less than $25k
+                    </div>
+                    <div class="py-sm">
+                        <input type="radio" name="budget" id="budget" value="$25k - $50k"> $25k - $50k
+                    </div>
+                    <div class="py-sm">
+                        <input type="radio" name="budget" id="budget" value="$50k - $100k"> $50k - $100k
+                    </div>
+                    <div class="py-sm">
+                        <input type="radio" name="budget" id="budget" value="$100k+"> $100k+
+                    </div>
+                </div>
+                <div class="py-sm">
+                    <label for="ref">How did you hear about us</label>
+                    <input type="text" name="ref" id="ref">
+                </div>
+                <div class="text-right py-sm">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
