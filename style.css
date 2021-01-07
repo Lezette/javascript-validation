@@ -11,7 +11,7 @@ html, body {
     height: 100%;
 }
 .w-auto {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 .grid, .grid-lg {
@@ -23,6 +23,13 @@ html, body {
 
 .grid-cols-1 {
     grid-template-columns: 1fr;
+}
+
+.flex {
+    height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .p-md {
